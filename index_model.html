@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/alerts.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/grades.css">
+    
+    <!-- <link rel="stylesheet" href="../boot-strap/css/index.css"> -->
+    <title>Mapa</title>
+</head>
+<body>
+    <!-- Menu -->
+    <header class="header header-desktop">
+        <div class="container">
+            <a href="#">
+                <img class="header-logo" src="img/logo-alura.svg" alt="">
+            </a>    
+            <nav id="menu" class="headerDesktop-content-menu">
+                <!-- section 1 -->
+                <div class="content-menu-section">
+                    <a id="dpdw-admin" class="content-menu-button">Cursos</a>
+                    <nav id="admin-menu" class="header-nav">
+                        <a class="header-nav-link header-item-link--dashboard" href="#" tabindex="-1">Dashboard</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Carreiras</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Formações</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Projetos</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Alura+</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Recomendações</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Meus Cursos</a>
+                    </nav>
+                </div>    
+                <!-- section 2 -->
+                <div class="content-menu-section">
+                        <a id="dpdw-community" class="content-menu-button">Comunidade</a>
+                    <nav id="community-menu" class="header-nav">
+                        <nav class="header-nav-subLinks">
+                            <a class="header-subLinks-firstLink" href="#" tabindex="-1">Fórum</a>
+                            <a class="header-subLinks-secondLink" href="#" tabindex="-1">Minhas discussões</a>
+                        </nav>
+                        <a class="header-nav-link" href="#" tabindex="-1">Ranking</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Últimas notícias</a> 
+                    </nav>
+                </div>
+                <!-- section 3 -->
+                <div class="content-menu-section">
+                        <a id="dpdw-notification" class="content-menu-button">Notification</a>
+                        <!-- <button class="header-news-button"></button> -->    
+                    <div id="notification-menu" class="header-nav header-news" tabindex="-1">
+                        <span class="header-news-text">News</span>
+                        <ul class="header-news-list">
+                            <li class="news__item ">
+                                <a class="header-news-item-link" href="#" target="_blank" tabindex="-1">
+                                    <img class="news__icon" src="img/step-post-alura.svg" alt="Ícone de Como criar um projeto com Flutter: Hello World">
+                                    <div class="news__information">
+                                        <span class="news__kind ">POST</span>
+                                        <h4 class="news__name">Como criar um projeto com Flutter: Hello World</h4>
+                                        <span class="news__publishedDate">2 dias atrás</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news__item ">
+                                <a class="header-news-item-link" href="#" target="_blank" tabindex="-1">
+                                    <img class="news__icon" src="img/step-post-alura.svg" alt="Ícone de Novidades na Alura: vídeos Alura+ e Planos de estudo">
+                                    <div class="news__information">
+                                        <span class="news__kind ">POST</span>
+                                        <h4 class="news__name">Novidades na Alura: vídeos Alura+ e Planos de estudo</h4>
+                                        <span class="news__publishedDate">2 dias atrás</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news__item ">
+                                <a class="header-news-item-link" href="#" target="_blank" tabindex="-1">
+                                    <img class="news__icon" src="img/step-hipsters.svg" alt="Ícone de Inovação contra estagnação (Vingadores)">
+                                    <div class="news__information">
+                                        <span class="news__kind ">PODCAST</span>
+                                        <h4 class="news__name">Inovação contra estagnação (Vingadores)</h4>
+                                        <span class="news__publishedDate">2 dias atrás</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="header-news-text news__more" href="#" tabindex="-1">Ver todas</a>
+                    </div>
+                </div>
+                <!-- section 4 -->
+                <div class="content-menu-section">
+                    <a id="dpdw-profile" class="content-menu-button">
+                        <img id="img-profile" src="img/step-hipsters.svg" class="headline-profile-avatar">
+                        Yuri
+                    </a>
+                    <nav id="profile-menu" class="header-nav header-nav-profile" tabindex="-1">
+                        <nav class="header-nav-subLinks">
+                            <a class="header-subLinks-firstLink" href="#" tabindex="-1">Perfil</a>
+                            <a class="header-subLinks-secondLink" href="#" tabindex="-1">Alterar Senha</a>
+                        </nav>    
+                        <a class="header-nav-link" href="#" tabindex="-1">Meus planos de estudo</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Minhas Atividades</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Minhas compras</a>
+                        <a class="header-nav-link" href="#" tabindex="-1">Sair</a>
+                    </nav> 
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1 class="banner-title">Dashboard</h1>
+        </div>
+    </section>
+    <br>
+    <!-- buttons -->
+    <div class="container">
+        <p>Buttons</p>
+        <div>
+            <a href="#" id="btn-add" class="btn-mp btn-mp-default">default</a>
+            <a href="#" class="btn-mp btn-mp-success">success</a>
+            <a href="#" class="btn-mp btn-mp-danger">danger</a>
+            <a href="#" class="btn-mp btn-mp-warning">warning</a>
+            <a href="#" class="btn-mp btn-mp-info">info</a>
+            <p style="display: inline-block">tag 'a' com formato de button</p> 
+        </div>
+        
+        <div>
+            <button class="btn-mp btn-mp-default">default</button>
+            <button class="btn-mp btn-mp-success">success</button>
+            <button class="btn-mp btn-mp-danger">danger</button>
+            <button class="btn-mp btn-mp-warning">warning</button>
+            <button class="btn-mp btn-mp-info">info</button>
+            <p style="display: inline-block">Buttons</p>
+        </div>
+    
+        <div>
+            <a href="#" class="btn-mp btn-mp-outline-default">default</a>
+            <a href="#" class="btn-mp btn-mp-outline-success">success</a>
+            <a href="#" class="btn-mp btn-mp-outline-danger">danger</a>
+            <a href="#" class="btn-mp btn-mp-outline-warning">warning</a>
+            <a href="#" class="btn-mp btn-mp-outline-info">info</a>
+            <p style="display: inline-block">tag 'a' com formato de button outline</p> 
+        </div>
+              
+        <div>
+            <button class="btn-mp btn-mp-outline-default">default</button>
+            <button class="btn-mp btn-mp-outline-success">success</button>
+            <button class="btn-mp btn-mp-outline-danger">danger</button>
+            <button class="btn-mp btn-mp-outline-warning">warning</button>
+            <button class="btn-mp btn-mp-outline-info">info</button>
+            <p style="display: inline-block">Buttons outline</p>
+        </div>
+    </div>
+    <hr>
+    <!-- alerts -->
+    <div class="container">
+        <p>Alerts</p>
+        <div class="alert alert-success">
+            <div class="alert-msg">
+                <svg class="alert-icon">
+                    <use xlink:href="img/svg/alerts.svg#icon-alert-success"/>
+                </svg>
+                <span>Você concluiu o modulo de <a class="alert-link" href="#">Algoritmos e Estruturas de Dados</a> com sucesso.</span>
+            </div>
+        </div>
+        <div class="alert alert-danger">
+            <div class="alert-msg">
+                <svg class="alert-icon">
+                    <use xlink:href="img/svg/alerts.svg#icon-alert-danger"/>
+                </svg>
+                <span>Você não tem permissão para acessar essa área.</span>
+            </div>
+        </div>
+        <div class="alert alert-warning">
+            <div class="alert-msg">
+                <svg class="alert-icon">
+                    <use xlink:href="img/svg/alerts.svg#icon-alert-warning"/>
+                </svg>
+                <span>Você ainda precisa concluir o modulo 2 para continuar.</span>
+            </div>
+        </div>
+        <div class="alert alert-info">
+            <div class="alert-msg">
+                <svg class="alert-icon">
+                    <use xlink:href="img/svg/alerts.svg#icon-alert-info"/>
+                </svg>
+                <span>Ler é um ótimo exercício para o cerebro.</span>
+            </div>
+        </div>
+    </div>
+    <!-- Alerts-Dismissibles -->
+    <div class="container">
+        <p>Alerts</p>
+        <input type="checkbox" class="alert-input" id="alert-1">
+        <div class="alert alert-success">
+            <div class="alert-msg">
+                <svg class="alert-icon">
+                    <use xlink:href="img/svg/alerts.svg#icon-alert-success"/>
+                </svg>
+                <span class="">Você concluiu o modulo de <a class="alert-link" href="#">Algoritmos e Estruturas de Dados</a> com sucesso.</span>
+            </div>
+            <label class="close" for="alert-1">x</label>
+        </div>
+        <input type="checkbox" class="alert-input" id="alert-2">
+        <div class="alert alert-danger">
+            <div class="alert-msg">
+                <svg class="alert-icon">
+                    <use xlink:href="img/svg/alerts.svg#icon-alert-danger"/>
+                </svg>
+                <span class="alert-msg">Você não tem permissão para acessar essa área.</span>
+            </div>
+            <label class="close" for="alert-2">x</label>
+        </div>
+        <input type="checkbox" class="alert-input" id="alert-3">
+        <div class="alert alert-warning">
+            <div class="alert-msg">
+                <svg class="alert-icon">
+                    <use xlink:href="img/svg/alerts.svg#icon-alert-warning"/>
+                </svg>
+                <span class="alert-msg">Você ainda precisa concluir o modulo 2 para continuar.</span>
+            </div>
+            <label class="close" for="alert-3">x</label>
+        </div>
+        <input type="checkbox" class="alert-input" id="alert-4">
+        <div class="alert alert-info">
+            <div class="alert-msg">
+                <svg class="alert-icon">
+                    <use xlink:href="img/svg/alerts.svg#icon-alert-info"/>
+                </svg>
+                <span class="alert-msg">Ler é um ótimo exercício para o cerebro.</span>
+            </div>
+            <label class="close" for="alert-4">x</label>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <!-- Forms -->
+    <div class="container">
+        <form>
+            <div class="form">
+                <div class="form-header">
+                   <h3 class="form-header-title form-user-information">Metadados da questão</h3>
+                </div>
+                <div class="row">
+                    <div>
+                        <label class="form-label col col-2" for="txt-email">
+                            EMAIL
+                            <input class="form-input" id="txt-email" type="text" name="email" placeholder="Email ..."></input>
+                        </label>
+                        <label class="form-label col col-2" for="txt-pwd">
+                            PASSWORD
+                            <input class="form-input" id="txt-pwd" type="password" name="pwd" placeholder="Password ..."></input>
+                        </label>
+                        <label class="form-label col" for="ta-decrition">
+                            FEEDBACK
+                            <textarea class="form-input form-textarea" id="ta-descrition" type="text" name="obs"></textarea>
+                        </label>
+                        <label for="cbx-disciplina" class="form-label col col-3">
+                            DISCIPLINA
+                            <select name="disciplina" id="cbx-disciplina" class="form-input">
+                                <option value="">Algoritmos e Estrutura de Dados</option>
+                                <option value="">Banco de Dados</option>
+                                <option value="">Organização de Computadores</option>
+                                <option value="">Gerência de Projetos</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                        <div class="col col-2">
+                            <label>
+                                <input type="radio" name="teste" value="opt1">
+                                Opt1
+                            </label>
+                        </div>
+                        <div class="col col-2">
+                            <label>
+                                <input id="outro" type="radio" name="teste" value="opt2">
+                                Opt2
+                                <input id="msg" type="text" class="text-hiden">
+                            </label>
+                        </div>
+                    </div>
+                <button class="btn-mp btn-mp-outline-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <!-- <div class="header__nav__wrapper header__nav__wrapper--ctas">
+        <a href="/planos-cursos-online" class="header__nav__link header__nav__link--cta">Matricule-se</a>
+    </div> -->
+
+    <!-- <script src="../boot-strap/js/index.js"></script> -->
+    <!-- <script src="../boot-strap/js/jquery.js"></script> -->
+    <!-- <script src="../boot-strap/js/docs.js"></script> -->
+    <script src="js/menu.js"></script>
+    <script src="js/buscarAPI.js"></script>
+   </body>
+</html>

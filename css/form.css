@@ -1,5 +1,6 @@
 .form {
     padding: 25px 0 15px;
+    font-family: "Source Sans Pro";
 }
 
 .form-header {
@@ -49,7 +50,8 @@
 
 .form-label {
     color: #747c81;
-    font-size: 15px
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .form-warning {
@@ -66,9 +68,9 @@
 
 .form-input {
     display: block;
-    height: 50px;
-    margin: 5px 0 0;
-    padding: 1em;
+    height: 3em;
+    margin: 5px 0 15px;
+    padding: 7px;
     width: 100%;
     color: #747c81;
     border: solid 1.5px #e3e9ec;
@@ -118,6 +120,9 @@
     text-align: right
 }
 
+.form-footer {
+    text-align: end;
+}
 /* @media (min-width:480px) {
     .form-header-option,
     .form-header-title {
