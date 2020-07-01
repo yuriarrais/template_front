@@ -5,40 +5,30 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/btn.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <!-- <link rel="stylesheet" href="css/index.css"> -->
-    <!-- <link rel="stylesheet" href="css/alerts.css"> -->
-    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/grades.css">
-    
-    <!-- <link rel="stylesheet" href="../boot-strap/css/index.css"> -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/table.css">
+
     <title>Mapa</title>
 </head>
     <body>
             <!-- Menu -->
-        <header class="header header-desktop">
+        <header class="header">
             <div class="container">
                 <a href="#">
                     <img class="header-logo" src="img/logo-alura.svg" alt="">
                 </a>    
-                <nav id="menu" class="headerDesktop-content-menu">
+                <nav id="menu" class="header-content-menu">
                     <!-- section 1 -->
                     <div class="content-menu-section">
                         <a id="dpdw-admin" class="content-menu-button">Cursos</a>
-                        <nav id="admin-menu" class="header-nav">
-                            <a class="header-nav-link header-item-link--dashboard" href="#" tabindex="-1">Dashboard</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Carreiras</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Formações</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Projetos</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Alura+</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Recomendações</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Meus Cursos</a>
-                        </nav>
                     </div>    
                     <!-- section 2 -->
-                    <div class="content-menu-section">
+                    <div class="content-menu-section drop">
                             <a id="dpdw-community" class="content-menu-button">Comunidade</a>
                         <nav id="community-menu" class="header-nav">
                             <nav class="header-nav-subLinks">
@@ -50,7 +40,7 @@
                         </nav>
                     </div>
                     <!-- section 3 -->
-                    <div class="content-menu-section">
+                    <div class="content-menu-section drop">
                             <a id="dpdw-notification" class="content-menu-button">Notification</a>
                             <!-- <button class="header-news-button"></button> -->    
                         <div id="notification-menu" class="header-nav header-news" tabindex="-1">
@@ -91,10 +81,10 @@
                         </div>
                     </div>
                     <!-- section 4 -->
-                    <div class="content-menu-section">
+                    <div class="content-menu-section drop">
                         <a id="dpdw-profile" class="content-menu-button">
                             <img id="img-profile" src="img/step-hipsters.svg" class="headline-profile-avatar">
-                            Yuri
+                            Usuário
                         </a>
                         <nav id="profile-menu" class="header-nav header-nav-profile" tabindex="-1">
                             <nav class="header-nav-subLinks">
@@ -115,9 +105,11 @@
             <div class="container">
                 <h1 class="banner-title">USUÁRIO</h1>
             </div>
-        </section>
+        </section> 
+         
         <div class="container">
             <form class="form">
+          
                 <div class="row">
                     <label class="form-label col col-2">
                         Primeiro Nome
@@ -129,18 +121,44 @@
                     </label>
                     <label class="form-label col col-2">
                         Email
-                        <input type="text" class="form-input"></input>
+                        <input class="form-input" id="txt-email" type="text" name="email" placeholder="Email"></input>
                     </label>
                     <label class="form-label col col-2">
                         Senha
                         <input type="password" class="form-input"></input>
                     </label>
+                    <label class="form-label col" for="ta-decrition">
+                        Resumo
+                        <textarea class="form-input form-textarea wrapper" id="ta-descrition" type="text" name="obs"></textarea>
+                    </label>
+                    <label for="cbx-disciplina" class="form-label col col-3">
+                        Categoria
+                        <select name="disciplina" id="cbx-disciplina" class="form-input">
+                            <option value="">Pesquisa Científica</option>
+                            <option value="">NORMAM 25</option>
+                            <option value="">Decreto 96000</option>
+                            <option value="">Informação Geográfica</option>
+                        </select>
+                    </label>
+                    <label class="form-label col">
+                        <input type="radio" name="teste" value="opt1" class="form-radio">
+                        Opt1
+                    </label>
+                    <label class="form-label col">
+                        <input type="radio" name="teste" value="opt1">
+                        Opt1
+                    </label>
                     <div class="form-footer">
-                        <button type="submit" href="#" class="btn-mp btn-mp-success">success</button>
+                        <button type="submit" href="#" class="btn-mp btn-mp-success">CADASTRAR</button>
                     </div>
+                    
                 </div>
             </form>
-        </div>    
+       
+        </div>   
+        <div class="footer">
+            <p>Footer</p>
+          </div>
         <script src="js/menu.js"></script>
     </body>
 </html>
