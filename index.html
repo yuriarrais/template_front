@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/grades.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <title>Mapa</title>
 </head>
@@ -105,48 +105,50 @@
             <div class="container">
                 <h1 class="banner-title">USUÁRIO</h1>
             </div>
-        </section> 
-         
+        </section>
         <div class="container">
-            <form class="form">
-          
+            <form>
                 <div class="row">
-                    <label class="form-label col col-2">
+                    <label class="col col-2">
                         Primeiro Nome
-                        <input type="text" class="form-input" placeholder="Escrever"></input>
+                        <input type="text"  placeholder="Escrever"></input>
                     </label>
-                    <label class="form-label col col-2">
+                    <label class="col col-2">
                         Último Nome
-                        <input type="text" class="form-input"></input>
+                        <input type="text" ></input>
                     </label>
-                    <label class="form-label col col-2">
+                    <label class="col col-2">
                         Email
-                        <input class="form-input" id="txt-email" type="text" name="email" placeholder="Email"></input>
+                        <input  id="txt-email" type="text" name="email" placeholder="Email"></input>
                     </label>
-                    <label class="form-label col col-2">
+                    <label class="col col-2">
                         Senha
-                        <input type="password" class="form-input"></input>
+                        <input type="password" ></input>
                     </label>
-                    <label class="form-label col" for="ta-decrition">
+                    <label class="col" for="ta-decrition">
                         Resumo
-                        <textarea class="form-input form-textarea wrapper" id="ta-descrition" type="text" name="obs"></textarea>
+                        <textarea id="ta-descrition" type="text" name="obs"></textarea>
                     </label>
-                    <label for="cbx-disciplina" class="form-label col col-3">
+                    <label for="cbx-disciplina" class="col col-3">
                         Categoria
-                        <select name="disciplina" id="cbx-disciplina" class="form-input">
+                        <select name="disciplina" id="cbx-disciplina" >
                             <option value="">Pesquisa Científica</option>
                             <option value="">NORMAM 25</option>
                             <option value="">Decreto 96000</option>
                             <option value="">Informação Geográfica</option>
                         </select>
                     </label>
-                    <label class="form-label col">
-                        <input type="radio" name="teste" value="opt1" class="form-radio">
-                        Opt1
-                    </label>
-                    <label class="form-label col">
+                    <label class="col">
                         <input type="radio" name="teste" value="opt1">
                         Opt1
+                    </label>
+                    <label class="col">
+                        <input type="radio" name="teste" value="opt1">
+                        Opt1
+                    </label>
+                    <label class="col">
+                        <input type="checkbox" name="teste" value="test">
+                        Checkbox
                     </label>
                     <div class="form-footer">
                         <button type="submit" href="#" class="btn-mp btn-mp-success">CADASTRAR</button>

@@ -22,11 +22,11 @@
     font-weight: 600;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Source Sans Pro";
     src: url("../fonts/Source_Serifs_Pro/SourceSansPro-Black.ttf") format("truetype");
     font-weight: 700;
-}
+} */
 
 @font-face {
     font-family: "Source Serif Pro";
