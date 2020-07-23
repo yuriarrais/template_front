@@ -1,6 +1,6 @@
 
 form {
-    padding: 25px 0 15px; 
+    padding: 0 0 15px; 
 }
 
 form label {
@@ -10,12 +10,18 @@ form label {
     font-family: "Source Sans Pro";
 }
 
-form label input[type=text], input[type=password], select, textarea{
+.not-bold {
+    font-weight: 400;
+}
+
+form input[type=text],
+form input[type=password],
+form select,
+form textarea {
     color: #747c81;
     font-family: "Source Sans Pro";
     margin: 5px 0 15px;
     display: block;
-    height: 3em;
     padding: 7px;
     width: 100%;
     border: solid 1.5px #e3e9ec;
@@ -23,17 +29,26 @@ form label input[type=text], input[type=password], select, textarea{
     background-color: #fbfeff;
 }
 
-/* .form-input:disabled {
-    background: #f2f5f7;
-} */
-
-input[type=radio], input[type=checkbox] {
-    margin: 5px 0 15px;
-    display: inline-block;
-    transform: scale(1.1)
+form input[type=text], 
+form input[type=password], 
+form select {
+    height: 3em;
 }
 
-textarea {
+form input[type=radio], 
+form input[type=checkbox] {
+    margin: 5px 0 15px;
+    display: inline-block;
+    transform: scale(1.1);
+
+}
+
+form input[type=radio]:checked + span,
+form input[type=checkbox]:checked + span {
+    font-weight: 600;
+}
+
+form textarea {
     height: 80px;
     resize: vertical;
     line-height: 1.5em
@@ -42,6 +57,11 @@ textarea {
 .form-footer {
     text-align: end;
 }
+
+
+/* .form-input:disabled {
+    background: #f2f5f7;
+} */
 
 /* .form-submit {
     background: #edf3f6;

@@ -1,0 +1,54 @@
+
+.box {
+  border-radius: 3px;
+  background: #ffffff;
+  margin: 0 0 20px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.box-header {
+  color: #444;
+  display: block;
+  padding: 10px;
+  position: relative
+}
+
+.box-header-data-table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 10px
+}
+
+.table {
+  margin: 6px 0 6px;
+  border: 1px solid #f4f4f4;
+  clear: both;
+  max-width: none;
+  border-collapse: separate;
+  width: 100%;
+  background-color: transparent;
+  border-spacing: 0;
+  display: table;
+}
+
+tbody>tr:nth-of-type(odd) {
+  background-color: #f4f4f4;
+} 
+
+th {
+  /* width: ; */
+  /* border-top: 0; somente para o primiero tr*/
+  padding: 8px 30px 8px 8px;
+  border-bottom: 2px solid #f4f4f4;
+  /* line-height: 2em; */
+  text-align: left;
+}
