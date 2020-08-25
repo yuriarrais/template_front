@@ -7,7 +7,7 @@
 .search {
   border: solid 1px #C3C3C3;
   border-radius: 10px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   text-decoration: none;
   vertical-align: middle;
@@ -47,15 +47,13 @@
   border-radius: 10px;
   background-color: #fbfeff;
   height: 2.5em;
-  
+  align-items: center;
 }
-
 
 .table {
   margin: 6px 0 6px;
   border-left: 1px solid #f4f4f4;
   border-bottom: 1px solid #f4f4f4;
-
   clear: both;
   max-width: none;
   border-collapse: separate;
@@ -64,7 +62,6 @@
   border-spacing: 0;
   display: table;
 }
-
 
 tbody>tr:nth-of-type(odd) {
   background-color: #f9f9f9;
@@ -97,20 +94,47 @@ td {
   border-bottom-width: 0;
 }
 
+.header-data-table svg{
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
+.header-data-table>div{
+  display: flex;
+  align-items: center;
+}
 
+.header-data-table input[type="checkbox"]{
+  display: none;
+}
 
+#select-all, #delete-select-all{
+  display: none;
+}
+
+.header-data-table input[type="checkbox"]:checked ~ #select-all, 
+.header-data-table input[type="checkbox"]:checked ~ #delete-select-all{
+  display: inline-block;
+}
+
+.header-data-table input[type="checkbox"]:checked ~ #select-menu{
+  transform: translateY(-20%) translateX(12%) rotate(90deg);
+}
 
 .pagination {
   display: flex;
   padding-left: 0;
   border-radius: 4px;
 }
+
 .pagination>li:first-child>a {
   margin-left: 0;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
+
 .pagination>li:last-child>a {
   margin-right: 0;
   border-top-right-radius: 4px;
@@ -120,14 +144,14 @@ td {
 
 .pagination>li>a{
   position: relative;
-    float: left;
-    padding: 6px 12px;
-    margin-left: -1px;
-    line-height: 1.42857143;
-    color: #337ab7;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #ddd;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 
 
