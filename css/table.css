@@ -65,7 +65,11 @@
 
 tbody>tr:nth-of-type(odd) {
   background-color: #f9f9f9;
-} 
+}
+
+/* tbody>tr>td:last-child{
+  text-align:right;
+} */
 
 th {
   /* width: ; */
@@ -105,7 +109,7 @@ td {
   display: flex;
   align-items: center;
 }
-
+/* 
 .header-data-table input[type="checkbox"]{
   display: none;
 }
@@ -121,7 +125,7 @@ td {
 
 .header-data-table input[type="checkbox"]:checked ~ #select-menu{
   transform: translateY(-20%) translateX(12%) rotate(90deg);
-}
+} */
 
 .pagination {
   display: flex;

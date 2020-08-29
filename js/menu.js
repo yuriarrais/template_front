@@ -2,7 +2,8 @@
 document.querySelector("#menu").addEventListener("click",function(event){
     
     if (!event.target.matches('#img-profile')){
-        var parent = event.target.parentNode.getElementsByClassName('header-nav')[0];    
+        var parent = event.target.parentNode.getElementsByClassName('header-nav')[0]; 
+        console.log(parent)  
         if (parent.classList.contains('dpdw-open')){
             parent.classList.remove('dpdw-open');
         }else{
