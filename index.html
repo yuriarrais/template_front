@@ -1,8 +1,9 @@
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/grades.css">
@@ -14,152 +15,33 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <title>Mapa</title>
-</head>
-    <body>
-            <!-- Menu -->
-        <header class="header">
+</head>    
+    
+        <body>
+        
+        <header class="header header-desktop">
             <div class="container">
-                <a href="#">
-                    <img class="header-logo" src="img/logo-alura.svg" alt="">
-                </a>    
-                <nav id="menu" class="header-content-menu">
-                    <!-- section 1 -->
-                    <div class="content-menu-section">
-                        <a id="dpdw-admin" class="content-menu-button">Cursos</a>
-                    </div>    
-                    <!-- section 2 -->
-                    <div class="content-menu-section drop">
-                            <a id="dpdw-community" class="content-menu-button">Comunidade</a>
-                        <nav id="community-menu" class="header-nav">
-                            <nav class="header-nav-subLinks">
-                                <a class="header-subLinks-firstLink" href="#" tabindex="-1">Fórum</a>
-                                <a class="header-subLinks-secondLink" href="#" tabindex="-1">Minhas discussões</a>
-                            </nav>
-                            <a class="header-nav-link" href="#" tabindex="-1">Ranking</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Últimas notícias</a> 
-                        </nav>
-                    </div>
-                    <!-- section 3 -->
-                    <div class="content-menu-section drop">
-                            <a id="dpdw-notification" class="content-menu-button">Notification</a>
-                            <!-- <button class="header-news-button"></button> -->    
-                        <div id="notification-menu" class="header-nav header-news" tabindex="-1">
-                            <span class="header-news-text">News</span>
-                            <ul class="header-news-list">
-                                <li class="news__item ">
-                                    <a class="header-news-item-link" href="#" target="_blank" tabindex="-1">
-                                        <img class="news__icon" src="img/step-post-alura.svg" alt="Ícone de Como criar um projeto com Flutter: Hello World">
-                                        <div class="news__information">
-                                            <span class="news__kind ">POST</span>
-                                            <h4 class="news__name">Como criar um projeto com Flutter: Hello World</h4>
-                                            <span class="news__publishedDate">2 dias atrás</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="news__item ">
-                                    <a class="header-news-item-link" href="#" target="_blank" tabindex="-1">
-                                        <img class="news__icon" src="img/step-post-alura.svg" alt="Ícone de Novidades na Alura: vídeos Alura+ e Planos de estudo">
-                                        <div class="news__information">
-                                            <span class="news__kind ">POST</span>
-                                            <h4 class="news__name">Novidades na Alura: vídeos Alura+ e Planos de estudo</h4>
-                                            <span class="news__publishedDate">2 dias atrás</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="news__item ">
-                                    <a class="header-news-item-link" href="#" target="_blank" tabindex="-1">
-                                        <img class="news__icon" src="img/step-hipsters.svg" alt="Ícone de Inovação contra estagnação (Vingadores)">
-                                        <div class="news__information">
-                                            <span class="news__kind ">PODCAST</span>
-                                            <h4 class="news__name">Inovação contra estagnação (Vingadores)</h4>
-                                            <span class="news__publishedDate">2 dias atrás</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <a class="header-news-text news__more" href="#" tabindex="-1">Ver todas</a>
-                        </div>
-                    </div>
-                    <!-- section 4 -->
-                    <div class="content-menu-section drop">
-                        <a id="dpdw-profile" class="content-menu-button">
-                            <img id="img-profile" src="img/step-hipsters.svg" class="headline-profile-avatar">
-                            Usuário
-                        </a>
-                        <nav id="profile-menu" class="header-nav header-nav-profile" tabindex="-1">
-                            <nav class="header-nav-subLinks">
-                                <a class="header-subLinks-firstLink" href="#" tabindex="-1">Perfil</a>
-                                <a class="header-subLinks-secondLink" href="#" tabindex="-1">Alterar Senha</a>
-                            </nav>    
-                            <a class="header-nav-link" href="#" tabindex="-1">Meus planos de estudo</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Minhas Atividades</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Minhas compras</a>
-                            <a class="header-nav-link" href="#" tabindex="-1">Sair</a>
-                        </nav> 
-                    </div>
-                </nav>
+                <a class="header-logo"><img class="header-logo" src="img/logo-alura.svg"></a>
+                <nav id="menu" class="header-content-menu"><div class="content-menu-section"><a class="content-menu-button" onclick="get_data('#','dashboard')">dashboard</a></div><div class="content-menu-section drop"><a class="content-menu-button">Cadastro</a><nav class="header-nav header-nav-profile" tabindex="-1"><nav class="header-nav-subLinks"><a class="header-subLinks-firstLink" tabindex="-1" onclick="get_data('http://192.168.0.110:5000/user/','Gerencia de Usuários')">usuários</a><a class="header-subLinks-secondLink" tabindex="-1">adicionar novo</a></nav></nav></div><div class="content-menu-section drop"><a class="content-menu-button"><img src=img/step-hipsters.svg class="headline-profile-avatar">Yuri Arrais</a><nav class="header-nav header-nav-profile" tabindex="-1"><nav class="header-nav-subLinks"><a class="header-subLinks-firstLink" tabindex="-1" onclick="get_data('#','perfil')">perfil</a><a class="header-subLinks-secondLink" tabindex="-1">alterar senha</a></nav><a class="header-nav-link" tabindex="-1" onclick="get_data('')">sair</a></nav></div></nav>
             </div>
         </header>
-        <!-- Banner -->
-        <section class="banner">
+    
+        <div class="banner">
             <div class="container">
-                <h1 class="banner-title">USUÁRIO</h1>
+                <h1 id="banner-title">dashboard</h1>
             </div>
-        </section>
-        <div class="container">
-            <form>
-                <div class="row">
-                    <label class="col col-2">
-                        Primeiro Nome
-                        <input type="text"  placeholder="Escrever"></input>
-                    </label>
-                    <label class="col col-2">
-                        Último Nome
-                        <input type="text" ></input>
-                    </label>
-                    <label class="col col-2">
-                        Email
-                        <input  id="txt-email" type="text" name="email" placeholder="Email"></input>
-                    </label>
-                    <label class="col col-2">
-                        Senha
-                        <input type="password" ></input>
-                    </label>
-                    <label class="col" for="ta-decrition">
-                        Resumo
-                        <textarea id="ta-descrition" type="text" name="obs"></textarea>
-                    </label>
-                    <label for="cbx-disciplina" class="col col-3">
-                        Categoria
-                        <select name="disciplina" id="cbx-disciplina" >
-                            <option value="">Pesquisa Científica</option>
-                            <option value="">NORMAM 25</option>
-                            <option value="">Decreto 96000</option>
-                            <option value="">Informação Geográfica</option>
-                        </select>
-                    </label>
-                    <label class="col not-bold">
-                        <input type="radio" name="teste" value="opt1">
-                        <span>Opt1</span>
-                    </label>
-                    <label class="col not-bold">
-                        <input type="radio" name="teste" value="opt1">
-                        <span>Opt1</span>
-                    </label>
-                    <label class="col not-bold">
-                        <input type="checkbox" name="teste" value="test">
-                        <span>Opt1</span>
-                    </label>
-                    <div class="form-footer">
-                        <button type="submit" href="#" class="btn-mp btn-mp-success">CADASTRAR</button>
-                    </div> 
-                </div>
-            </form>
-        </div>   
-        <div class="footer">
-            <p>Footer</p>
-          </div>
+        </div>
+        <div>
+            <div id="content" class="container">
+            </div>
+        </div>
+        <div>
+            <div id="footer" class="container">
+            </div>
+        </div>
         <script src="js/menu.js"></script>
-    </body>
+        <script src="src/index.js"></script>
+        </body>
+               
 </html>
-
+    

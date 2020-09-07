@@ -1,32 +1,29 @@
+var menu = document.querySelector("#menu");
+var dropdowns = menu.getElementsByClassName('header-nav');
 
-document.querySelector("#menu").addEventListener("click",function(event){
-    
-    if (!event.target.matches('#img-profile')){
-        var parent = event.target.parentNode.getElementsByClassName('header-nav')[0]; 
-        console.log(parent)  
-        if (parent.classList.contains('dpdw-open')){
-            parent.classList.remove('dpdw-open');
-        }else{
-            parent.classList.add('dpdw-open');
+menu.addEventListener("click",function(event){
+    let parent = event.target.parentNode.getElementsByClassName('header-nav')[0];
+    if (parent) {
+        if (!event.target.matches('#img-profile')){
+            if (parent.classList.contains('dpdw-open')){
+                parent.classList.remove('dpdw-open');
+            }else{
+                parent.classList.add('dpdw-open');
+            };
         };
-    };
+    }
 
-    let menu_dorpdown = document.querySelector('#menu').getElementsByClassName('header-nav');
-    for (let j=0; j < menu_dorpdown.length; j++){
-        if (menu_dorpdown[j] != parent){
-            menu_dorpdown[j].classList.remove('dpdw-open');
+    for (let j=0; j < dropdowns.length; j++){
+        if (dropdowns[j] != parent){
+            dropdowns[j].classList.remove('dpdw-open');
         }
     }
 });
 
 window.onclick = function(event) {
     if (!event.target.matches('.content-menu-button')) {
-        var dropdowns = document.getElementsByClassName("header-nav");
-        for (let i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('dpdw-open')) {
-                openDropdown.classList.remove('dpdw-open');
-            };
+        for (let j=0; j < dropdowns.length; j++){
+            dropdowns[j].classList.remove('dpdw-open');
         };
     };
 };
