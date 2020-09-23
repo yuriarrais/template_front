@@ -1,33 +1,44 @@
-document.querySelector("#menu").addEventListener("click",function(event){
-        
-    if (event.target.matches('img')){
-        let parent = event.target.parentNode.parentNode.getElementsByClassName('header-nav')[0];    
-    }else{
-        let parent = event.target.parentNode.getElementsByClassName('header-nav')[0];
-    }
-    
-    if (parent.classList.contains('dpdw-open')){
-        parent.classList.remove('dpdw-open');
-    }else{
-        parent.classList.add('dpdw-open');
+function event_table_menu(event){
+    // console.log(event.target.parentNode);
+    // console.log(event.target.parentNode.parentNode);
+    if (event.target.parentNode.matches("#select-menu") || event.target.parentNode.parentNode.matches("#select-menu")){
+    // if (event.target.parentNode.matches("#select-menu")) {
+        var element = document.getElementById("select-all")
+        if (element.getAttribute("hidden")){
+            document.querySelector("#select-menu").style.transform = "rotate(90deg)"
+            document.getElementById("delete-select-all").removeAttribute("hidden")
+            element.removeAttribute("hidden")
+            var checkbox = document.querySelector("tbody").querySelectorAll("input")
+                for (let i=0; i < checkbox.length; i++){
+                    checkbox[i].removeAttribute("hidden")
+                }
+        }else{
+            document.querySelector("#select-menu").style.transform = "rotate(0deg)"
+            document.getElementById("delete-select-all").setAttribute("hidden", "hidden")
+            element.setAttribute("hidden", "hidden")
+            var checkbox = document.querySelector("tbody").querySelectorAll("input")
+
+            for (let i=0; i < checkbox.length; i++){
+                checkbox[i].setAttribute("hidden", "hidden")
+                checkbox[i].checked = false
+            }
+        }
+    }else if (event.target.parentNode.matches("#select-all") || event.target.parentNode.parentNode.matches("#select-all")){
+        //var element = document.getElementById("select-all");
+        checkAll(); //again, function reference, no ()
     };
-
-    let menu_dorpdown = document.querySelector('#menu').getElementsByClassName('header-nav');
-    for (let j=0; j < menu_dorpdown.length; j++){
-        if (menu_dorpdown[j] != parent){
-            menu_dorpdown[j].classList.remove('dpdw-open');
-        }
-    }
-});
-
-window.onclick = function(event) {
-if (!event.target.matches('.content-menu-button') && !event.target.matches('img')) {
-    let dropdowns = document.getElementsByClassName("header-nav");
-    for (let i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('dpdw-open')) {
-            openDropdown.classList.remove('dpdw-open');
-        }
-    }
 }
+
+function checkAll(){
+
+    var check = document.querySelector("tbody").querySelectorAll("input");
+    if (!check[0].checked){
+        for (let i=0; i < check.length; i++){
+            check[i].checked = true
+        }
+    }else{
+        for (let i=0; i < check.length; i++){
+            check[i].checked = false
+        }
+    }
 }

@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/grades.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/btn.css">
-    <link rel="stylesheet" href="css/table.css">
-    <link rel="stylesheet" href="css/footer.css">
-
-    <title>Funcionalidades</title>
-</head>    
-    
-        <body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/alerts.css">
+        <link rel="stylesheet" href="css/grades.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/btn.css">
+        <link rel="stylesheet" href="css/table.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <title>Mapa</title>
+    </head>        
+    <body>
+        <!-- Header -->
         <header class="header header-desktop">
             <div class="container">
                 <a class="header-logo"><img class="header-logo" src="img/logo-alura.svg"></a>
-                <nav id="menu" class="header-content-menu"><div class="content-menu-section">
-                    <a class="content-menu-button" onclick="get_data('#','Dashboard')">Dashbord</a>
-                </div>
-                <div class="content-menu-section drop">
-                    <a class="content-menu-button">Dashbord</a>
-                    <nav class="header-nav header-nav-profile" tabindex="-1">
-                        <a class="header-nav-link" tabindex="-1" onclick="get_data('http://localhost:5000/user/','Usuários')">Usuários</a>
-                    </nav>
-                </div>
-                <div class="content-menu-section drop">
-                    <a class="content-menu-button">
-                        <img src=img/step-hipsters.svg class="headline-profile-avatar">Arthur</a><nav class="header-nav header-nav-profile" tabindex="-1"><a class="header-nav-link" tabindex="-1" onclick="get_data('','Perfil')">Perfil</a></nav></div></nav>
+                <nav id="menu" class="header-content-menu">
+                    <div class="content-menu-section">
+                        <a class="content-menu-button">dashboard</a>
+                    </div>
+                    <div class="content-menu-section drop">
+                        <a class="content-menu-button">Cadastro</a>
+                        <nav class="header-nav header-nav-profile" tabindex="-1">
+                            <nav class="header-nav-subLinks">
+                                <a class="header-subLinks-firstLink" tabindex="-1" onclick="user_list()">usuários</a>
+                                <a class="header-subLinks-secondLink" tabindex="-1" onclick="user_form()">adicionar novo</a>
+                            </nav>
+                        </nav>
+                    </div>
+                    <div class="content-menu-section drop">
+                        <a class="content-menu-button"><img src=img/step-hipsters.svg class="headline-profile-avatar">Yuri Arrais</a>
+                        <nav class="header-nav header-nav-profile" tabindex="-1">
+                            <nav class="header-nav-subLinks">
+                                <a class="header-subLinks-firstLink" tabindex="-1">perfil</a>
+                                <a class="header-subLinks-secondLink" tabindex="-1">alterar senha</a>
+                            </nav><a class="header-nav-link" tabindex="-1">sair</a>
+                        </nav>
+                    </div>
+                </nav>
             </div>
         </header>
-    
+        
+        <!-- Banner -->
         <div class="banner">
             <div class="container">
                 <h1 id="banner-title">Dashboard</h1>
             </div>
         </div>
-        <div>
-            <div id="content" class="container">
-            </div>
+        
+        <!-- Content -->
+        <div class="container">
+            <div id="msgs"></div>
+            <div id="content"></div>
         </div>
-        <div>
-            <div id="footer" class="container">
-            </div>
+        
+        <!-- Footer -->
+        <div class="container">
+            <div id="footer"></div>
         </div>
+        
         <script src="js/menu.js"></script>
-        <script src="src/index.js"></script>
-        </body>
-               
+        <script src="src/app/model/user.js"></script>
+        <script src="src/app/helpers/utils.js"></script>
+        <script src="src/app/helpers/view.js"></script>
+        <script src="src/app/helpers/table.js"></script>
+        <script src="src/app/helpers/operations.js"></script>
+        <script src="src/app/user/user.js"></script>
+        <script src="src/app/user/user_list.js"></script>
+
+    </body>               
 </html>
     
