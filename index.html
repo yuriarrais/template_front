@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/footer.css">
 
-    <title>Mapa</title>
+    <title>Funcionalidades</title>
 </head>    
     
         <body>
@@ -22,13 +22,24 @@
         <header class="header header-desktop">
             <div class="container">
                 <a class="header-logo"><img class="header-logo" src="img/logo-alura.svg"></a>
-                <nav id="menu" class="header-content-menu"><div class="content-menu-section"><a class="content-menu-button" onclick="get_data('#','dashboard')">dashboard</a></div><div class="content-menu-section drop"><a class="content-menu-button">Cadastro</a><nav class="header-nav header-nav-profile" tabindex="-1"><nav class="header-nav-subLinks"><a class="header-subLinks-firstLink" tabindex="-1" onclick="get_data('http://192.168.0.110:5000/user/','Gerencia de Usuários')">usuários</a><a class="header-subLinks-secondLink" tabindex="-1">adicionar novo</a></nav></nav></div><div class="content-menu-section drop"><a class="content-menu-button"><img src=img/step-hipsters.svg class="headline-profile-avatar">Yuri Arrais</a><nav class="header-nav header-nav-profile" tabindex="-1"><nav class="header-nav-subLinks"><a class="header-subLinks-firstLink" tabindex="-1" onclick="get_data('#','perfil')">perfil</a><a class="header-subLinks-secondLink" tabindex="-1">alterar senha</a></nav><a class="header-nav-link" tabindex="-1" onclick="get_data('')">sair</a></nav></div></nav>
+                <nav id="menu" class="header-content-menu"><div class="content-menu-section">
+                    <a class="content-menu-button" onclick="get_data('#','Dashboard')">Dashbord</a>
+                </div>
+                <div class="content-menu-section drop">
+                    <a class="content-menu-button">Dashbord</a>
+                    <nav class="header-nav header-nav-profile" tabindex="-1">
+                        <a class="header-nav-link" tabindex="-1" onclick="get_data('http://localhost:5000/user/','Usuários')">Usuários</a>
+                    </nav>
+                </div>
+                <div class="content-menu-section drop">
+                    <a class="content-menu-button">
+                        <img src=img/step-hipsters.svg class="headline-profile-avatar">Arthur</a><nav class="header-nav header-nav-profile" tabindex="-1"><a class="header-nav-link" tabindex="-1" onclick="get_data('','Perfil')">Perfil</a></nav></div></nav>
             </div>
         </header>
     
         <div class="banner">
             <div class="container">
-                <h1 id="banner-title">dashboard</h1>
+                <h1 id="banner-title">Dashboard</h1>
             </div>
         </div>
         <div>
